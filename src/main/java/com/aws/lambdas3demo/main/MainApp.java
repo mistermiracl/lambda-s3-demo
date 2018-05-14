@@ -11,7 +11,8 @@ import javafx.stage.Stage;
 
 public class MainApp extends Application {
 
-    @Override
+    @SuppressWarnings("restriction")
+	@Override
     public void start(Stage stage) throws Exception {
         //Parent root = FXMLLoader.load(getClass().getResource("/fxml/MainScene.fxml"));
         

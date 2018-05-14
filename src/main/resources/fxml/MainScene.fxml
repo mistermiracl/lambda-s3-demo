@@ -2,24 +2,26 @@
 
 <?import java.lang.*?>
 <?import java.util.*?>
-<?import javafx.stage.Stage?>
+<?import javafx.stage.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.HBox?>
 
 <Stage xmlns:fx="http://javafx.com/fxml" 
        fx:controller="com.aws.lambdas3demo.controller.MainSceneController"
        title="Main Scene">
     <scene>
         <Scene>
-            <AnchorPane id="AnchorPane" 
-                        prefHeight="200" 
-                        prefWidth="320" >
+            <VBox id="VBox" 
+            	  prefHeight="200" 
+            	  prefWidth="320"
+            	  alignment="CENTER"><!-- CENTERS THE VBOX BOTH VERT AND HORZ -->
                 <children>
-                    <Button layoutX="126" layoutY="90" text="Click Me!" onAction="#handleButtonAction" fx:id="button" />
-                    <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />
+                    <Button layoutX="126" layoutY="90" text="Escoge un archivo" onAction="#handleButtonAction" />
+                    <Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" text="Estado:"/>
                 </children>
-            </AnchorPane>
+            </VBox>
         </Scene>
     </scene>
 </Stage>
